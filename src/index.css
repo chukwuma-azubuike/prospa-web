@@ -1,5 +1,5 @@
 body {
-  font-family: 'Space Grotesk', sans-serif;
+  /* font-family: 'BR Firma Regular'; */
   margin: 0;
   color: #2A2A2A;
 }
@@ -10,7 +10,7 @@ html {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #F4F8FB;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -97,7 +97,7 @@ p {
 }
 
 .side-bar li {
-  padding: 12px 52px;
+  padding: 12px 50px;
   width: 200px;
   margin: auto;
   list-style: none;
@@ -400,8 +400,8 @@ a li:active {
 
 @media (min-width:541px) {
   main {
-    left: 318px;
-    width: 1160px;
+    left: 300px;
+    width: 1219px;
   }
   .balance {
     top: 140px;
