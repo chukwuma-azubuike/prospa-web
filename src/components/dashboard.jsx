@@ -8,6 +8,7 @@ import rectangle2 from '../images/Rectangle 2.png';
 import rectangle7 from '../images/Rectangle 7.png';
 import Summary from './summary';
 import CashOutFlow from './cash-outflow';
+import Transactions from './transactions';
 
 function Dashboard() {
     return (
@@ -24,6 +25,9 @@ function Dashboard() {
                 <div style={{ position: 'absolute', top: '365px' }}>
                     <Summary />
                     <CashOutFlow />
+                </div>
+                <div style={{ position: 'absolute', top: '786px' }}>
+                    <Transactions />
                 </div>
             </main>
         </div>

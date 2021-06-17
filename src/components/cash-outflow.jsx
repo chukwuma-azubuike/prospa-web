@@ -4,7 +4,7 @@ import teal from '../images/internet.png';
 import purple from '../images/marketing.png';
 import green from '../images/transfer.png';
 
-function Summary(props) {
+function CashOutFlow(props) {
     return (
         <div style={{
             background: '#FFFFFF', height: '350px', width: '372px',
@@ -88,4 +88,4 @@ function Summary(props) {
     );
 }
 
-export default Summary;
+export default CashOutFlow;

@@ -4,7 +4,7 @@ body {
   color: #2A2A2A;
 }
 
-h2{
+h2 {
   font-weight: lighter;
 }
 
@@ -19,7 +19,7 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 810px;
+  height: 1236px;
 }
 
 .section-inner-div img {
@@ -138,8 +138,6 @@ p {
   color: #A6ABB2;
   font-size: 15px;
 }
-
-.select-account {}
 
 .nav-bar {
   z-index: 1;
