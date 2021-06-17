@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../index.css';
 import logo from '../images/prospa logo black.png';
 import accounts from '../images/accounts.png';
-import transfer from '../images/transfer.png';
+import transfer from '../images/wallet.png';
 import invoice from '../images/invoice.png';
 import management from '../images/management.png';
 import bn from '../images/BN.png';
@@ -24,7 +24,7 @@ function SideBar() {
                     <img src={bn} style={{ width: '40px' }} />
                     <span style={{
                         position: 'absolute', top: '0',
-                        left: '52px', width: '100px', color: '#1B003B'
+                        left: '52px', width: '102px', color: '#1B003B'
                     }} >Clayvant Inc <br /> <a href='' style={{
                         color: '#8397AB', fontSize: '12px'
                     }} >Manage account</a></span>

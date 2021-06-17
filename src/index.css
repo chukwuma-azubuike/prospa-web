@@ -4,6 +4,10 @@ body {
   color: #2A2A2A;
 }
 
+h2{
+  font-weight: lighter;
+}
+
 html {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
