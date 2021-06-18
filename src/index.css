@@ -468,21 +468,77 @@ a li:active {
   border-image-slice: 1;
 }
 
-/*  */
+/* Form animations */
 
-.sign-up-form input:focus~.floating-label, .sign-up-form input:not(:focus):valid~.floating-label {
-  top: 8px;
-  bottom: 10px;
-  left: 20px;
+.sign-up-form .FN:focus~.floating-label {
+  left: 396px;
+  top: 260px;
   font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
+.sign-up-form .LN:focus~.floating-label-LN {
+  left: 396px;
+  top: 328px;
+  font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
+.sign-up-form .MN:focus~.floating-label-MN {
+  left: 500px;
+  top: 395px;
+  font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
+.sign-up-form .EA:focus~.floating-label-EA {
+  left: 396px;
+  top: 462px;
+  font-size: 11px;
+  color: #FA4A84;
   opacity: 1;
 }
 
 .floating-label {
+  color: #8397AB;
+  font-size: 12px;
   position: absolute;
   pointer-events: none;
-  left: 20px;
-  top: 18px;
+  left: 396px;
+  top: 277px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-LN {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 396px;
+  top: 344px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-MN {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 500px;
+  top: 410px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-EA {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 396px;
+  top: 476px;
   transition: 0.2s ease all;
 }
 

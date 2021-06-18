@@ -3,14 +3,15 @@ import React from 'react';
 function SignUpForm() {
     return (
         <div style={{ margin: '150px auto', width: '376px' }}>
+            <p style={{ fontSize: '10px', position: 'absolute', right: '96px', top: '37px' }} >Already a member?
+                <a href='' style={{ textDecoration: 'none', color: '#FA4A84' }} >  Sign In</a></p>
             <form className='sign-up-form' >
                 <h1>Create your account</h1>
                 <p style={{ color: '#8397AB', fontSize: '14px', fontWeight: '100' }} >A short description about account types</p>
-                <div>
-                    <input type='text' placeholder='First name' />
-                    <span class="floating-label">First name</span>
-                </div>
-                <input type='text' placeholder='Last name' />
+                <input type='text' name='fName' class='FN' />
+                <span class="floating-label FN">First name</span>
+                <input type='text' name='lName' class='LN' />
+                <span class="floating-label-LN">Last name</span>
                 {/* country codes (ISO 3166) and Dial codes. */}
                 <select placeholder='Country' name="countryCode" id="">
                     <option data-countryCode="NG" value="234" Selected>+234</option>
@@ -232,8 +233,10 @@ function SignUpForm() {
                         <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                     </optgroup>
                 </select>
-                <input style={{ width: '272px', marginLeft: '15px' }} type='text' placeholder='Mobile number' />
-                <input type='email' placeholder='Email address' />
+                <input name='phone' class='MN' style={{ width: '272px', marginLeft: '15px' }} type='text' />
+                <span class="floating-label-MN">Mobile number</span>
+                <input name='email' class='EA' type='email' />
+                <span class="floating-label-EA">Email Address</span>
                 <button type='submit'
                     onClick={(e) => {
                         e.preventDefault();
