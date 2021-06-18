@@ -32,7 +32,7 @@ function SideIntroPanel() {
                     with multiple accounts. No limits!
                 </p>
                 <img src={vault} style={{ width: '310px', margin: '50px 12px' }} />
-                <p style={{ position: 'absolute', bottom: '0', left: '-12px', fontSize: '10px' }} >© 2020 Prospa Inc</p>
+                <p style={{ position: 'absolute', bottom: '-12px', left: '0', fontSize: '10px' }} >© 2020 Prospa Inc</p>
             </div>
         </nav >
     )

@@ -97,6 +97,40 @@ p {
   color: #FFFFFF;
 }
 
+.sign-up-form {
+  width: 394px;
+}
+
+.sign-up-form input {
+  font-size: 14px;
+  padding-left: 15px;
+  width: 376px;
+  height: 44px;
+  background-color: #F4F8FB;
+  border-bottom: 1px solid #E0E2EC;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 10px auto;
+}
+
+.sign-up-form select {
+  padding-left: 15px;
+  padding: 10px;
+  width: 90px;
+  height: 47px;
+  background-color: #F4F8FB;
+  border-bottom: 1px solid #E0E2EC;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 10px auto;
+}
+
+.sign-up-form ::placeholder {
+  font-size: 12px;
+}
+
 .side-bar h1 {
   font-weight: 300;
   line-height: 35px;
@@ -365,10 +399,19 @@ p {
   border: 1px solid #EBEBEB;
 }
 
+.sign-up-form button {
+  width: inherit;
+  background: #FA4A84;
+  height: 44px;
+  border: none;
+  color: #FFFFFF;
+  margin-top: 12px;
+  border-radius: 6px;
+}
+
 input[type="month"]::-webkit-calendar-picker-indicator {
   display: block;
   padding: 0;
-  /* background: url(/src/images/Calendar.png) no-repeat; */
   width: 15px;
   margin-top: 4px;
 }
@@ -392,6 +435,10 @@ a li:hover {
   background-color: #F4F8FB;
 }
 
+.sign-up-form button:hover {
+  background-color: #F697B6;
+}
+
 .accounts:hover {
   transition: all 0.3s;
   background-color: #F4F8FB;
@@ -407,6 +454,40 @@ a li:active {
   background: #2c554e;
 }
 
+.sign-up-form button:active {
+  background-color: #b1355e;
+}
+
+/* Focus Effects */
+
+.sign-up-form input:focus {
+  transition: 0.3s all;
+  outline: none;
+  border-width: 3px;
+  border-image-source: linear-gradient(to right, #ff0057, #f24fbc, #ae8dff, #45b7ff, #00d2ff);
+  border-image-slice: 1;
+}
+
+/*  */
+
+.sign-up-form input:focus~.floating-label, .sign-up-form input:not(:focus):valid~.floating-label {
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 18px;
+  transition: 0.2s ease all;
+}
+
+/*  */
+
 /* Responsiveness */
 
 @media (max-width:339px) {
@@ -418,8 +499,8 @@ a li:active {
 
 @media (min-width:541px) {
   main {
-    left: 300px;
-    width: 1219px;
+    left: 398px;
+    width: 1138px;
   }
   .balance {
     top: 140px;
