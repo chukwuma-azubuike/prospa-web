@@ -1,15 +1,15 @@
 import React from 'react';
 import SideIntroPanel from './side-intro-panel';
 
-function Dashboard() {
+function SignUp() {
     return (
         <div>
             <SideIntroPanel />
-            <main>
-
+            <main style={{height:'100%'}} >
+                
             </main>
         </div>
     );
 }
 
-export default Dashboard;
+export default SignUp;

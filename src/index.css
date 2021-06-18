@@ -88,8 +88,9 @@ p {
 
 .side-intro-panel {
   position: fixed;
+  padding: 36px;
   height: 100%;
-  width: 300px;
+  width: 326px;
   border-radius: 0px;
   z-index: 1;
   background: #7E51FF;
