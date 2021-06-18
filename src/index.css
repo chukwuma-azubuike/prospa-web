@@ -86,6 +86,16 @@ p {
   /* overflow: hidden; */
 }
 
+.side-intro-panel {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  border-radius: 0px;
+  z-index: 1;
+  background: #7E51FF;
+  color: #FFFFFF;
+}
+
 .side-bar h1 {
   font-weight: 300;
   line-height: 35px;
@@ -378,7 +388,12 @@ input[type="month"]::-webkit-calendar-picker-indicator {
 
 a li:hover {
   transition: all 0.3s;
-  background-color: #FFFFFF;
+  background-color: #F4F8FB;
+}
+
+.accounts:hover {
+  transition: all 0.3s;
+  background-color: #F4F8FB;
 }
 
 /* Active Effects */

@@ -8,8 +8,8 @@ function Account(props) {
             float: 'left', borderRadius: '4px',
             boxShadow: '5px 1px 20px rgba(112, 112, 112, 0.15)',
         }} >
-            <p style={{ fontSize: '14px', marginBottom: '15px' }} >{props.accountType}</p>
-            <p style={{ fontSize: '14px', color: '#8397AB', marginBottom: '20px' }} >{props.bankAccount}</p>
+            <p style={{ fontSize: '12px', marginBottom: '15px' }} >{props.accountType}</p>
+            <p style={{ fontSize: '11px', color: '#8397AB', marginBottom: '20px' }} >{props.bankAccount}</p>
             <div style={{ position: 'absolute', bottom: '25px' }}>
                 <span style={{ fontSize: '30px' }} >{props.balance}</span><span>.45</span>
             </div>

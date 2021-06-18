@@ -15,7 +15,7 @@ function NavBar() {
             <div className='nav-bar'>
                 
                 <div>
-                    <span style={{color:'#8397AB', left: '428px', position: 'absolute', top: '26px', fontSize: '21px' }} >Dashboard</span>
+                    <span style={{color:'#8397AB', left: '428px', position: 'absolute', top: '26px', fontSize: '18px' }} >Dashboard</span>
                     <span style={{ right: '130px', position: 'absolute', top: '20px', fontSize: '15px' }}>
                         <img src={notification} alt="notification" style={{ width: '40px', marginRight: '30px' }} />
                         <img src={user} alt="user" style={{ width: '40px'}} />

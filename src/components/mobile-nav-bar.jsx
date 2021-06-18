@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
 import '../index.css';
-import TimelineOutlinedIcon from '@material-ui/icons/TimelineOutlined';
-import PeopleAltOutlinedIcon from '@material-ui/icons/PeopleAltOutlined';
-import DashboardOutlinedIcon from '@material-ui/icons/DashboardOutlined';
-import TuneOutlinedIcon from '@material-ui/icons/TuneOutlined';
-import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppRounded';
-import PhoneOutlinedIcon from '@material-ui/icons/PhoneOutlined';
-import StarOutlineRoundedIcon from '@material-ui/icons/StarOutlineRounded';
-import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
+import accounts from '../images/accounts.png';
+import transfer from '../images/wallet.png';
+import invoice from '../images/invoice.png';
+import management from '../images/management.png';
 import logo from '../images/prospa logo white.png';
-import Menu from './menu';
 import notification from '../images/notification.png';
 import user from '../images/user.png'
 
@@ -31,16 +26,12 @@ function NavBar() {
                         <img src={user} alt="user" style={{ width: '40px', position: 'absolute', right: '10px', top: '10px' }} />
                     </div>
                     <ul>
-                        <li><Menu menu='Main pages' /> </li>
-                        <a href=''><li> <DashboardOutlinedIcon className='list-icon' style={{ fontSize: 20 }} /> <span style={{ fontSize: 11 }} >Dashboard</span> </li></a>
-                        <a href=''><li> <AccountBalanceWalletOutlinedIcon className='list-icon' style={{ fontSize: 20 }} /> <span style={{ fontSize: 11 }} >Balances</span></li></a><span style={{ fontSize: 11 }} ></span>
-                        <a href=''><li> <PeopleAltOutlinedIcon className='list-icon' style={{ fontSize: 20 }} /> <span style={{ fontSize: 11 }} >Customers</span></li></a>
-                        <a href=''><li> <TimelineOutlinedIcon className='list-icon' style={{ fontSize: 20 }} /> <span style={{ fontSize: 11 }} >Analytics</span></li></a>
-                        <li><Menu menu='General' /> </li>
-                        <a href=''><li> <TuneOutlinedIcon className='list-icon' style={{ fontSize: 20 }} /> <span style={{ fontSize: 11 }} >Settings</span></li></a>
-                        <a href=''><li> <StarOutlineRoundedIcon className='list-icon' style={{ fontSize: 20 }} /> <span style={{ fontSize: 11 }} >Team</span></li></a>
-                        <a href=''><li> <PhoneOutlinedIcon className='list-icon' style={{ fontSize: 20 }} /> <span style={{ fontSize: 11 }} >Contact</span></li></a>
-                        <a href=''><li> <ExitToAppRoundedIcon className='list-icon' style={{ fontSize: 20 }} /> <span style={{ fontSize: 11 }} >Logout</span></li></a>
+                        <a href=''><li> <img src={accounts} className='list-icon' style={{ width: '24px', color: '#FFFFFF' }} /><span style={{ fontSize: 14, color: '#FA4A84' }} >Accounts</span></li></a>
+                        <a href=''><li> <img src={transfer} className='list-icon' style={{ width: '24px', color: '#FFFFFF' }} /> <span style={{ fontSize: 14, color: '#8397AB' }} >transfers</span></li></a>
+                        <a href=''><li> <img src={invoice} className='list-icon' style={{ width: '24px', color: '#FFFFFF' }} /> <span style={{ fontSize: 14, color: '#8397AB' }} >Invoice</span></li></a>
+                        <a href=''><li> <img src={management} className='list-icon' style={{ width: '24px', color: '#FFFFFF' }} /> <span style={{ fontSize: 14, color: '#8397AB' }} >Management</span></li></a>
+                        <a href=''><li> <img src={management} className='list-icon' style={{ width: '24px', color: '#FFFFFF' }} /> <span style={{ fontSize: 14, color: '#8397AB' }} >Security</span></li></a>
+                        <a href=''><li> <img src={management} className='list-icon' style={{ width: '24px', color: '#FFFFFF' }} /> <span style={{ fontSize: 14, color: '#8397AB' }} >Support</span></li></a>
                     </ul>
                 </nav>
 

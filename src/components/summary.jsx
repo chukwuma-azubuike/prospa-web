@@ -9,11 +9,10 @@ function Summary(props) {
         labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG'],
         datasets: [
             {
-                // label: 'June Summary',
+                label: 'June',
                 data: [4.5, 8, 11, 12.5, 12.8, 8.2, 6],
                 fill: false,
                 borderColor: '#FA4A84',
-                // backgroundColor: '#FA4A84',
                 fill: { value: 4.8, above: 'rgba(250, 74, 132, 0.26)', below: 'rgb(0, 0, 255, 0.1)' },
                 tension: 0.2,
                 backgroundImage: 'linear-gradient(red, yellow)',
