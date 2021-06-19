@@ -409,6 +409,11 @@ p {
   border-radius: 6px;
 }
 
+.sign-up-form input[type='radio'] {
+  width: 14px;
+  height: 12px;
+}
+
 input[type="month"]::-webkit-calendar-picker-indicator {
   display: block;
   padding: 0;
