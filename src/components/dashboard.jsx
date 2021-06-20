@@ -16,7 +16,7 @@ function Dashboard() {
             <NavBar />
             <MobileNavBar />
             <SideBar />
-            <main>
+            <main className='dashboard-main'>
                 <Welcome />
                 <div style={{ position: 'absolute', top: '166px' }} >
                     <Account balance='N814,800' accountType='CURRENT ACCOUNT' bankAccount='PROVIDUS BANK - 9906533917' icon={rectangle2} />
