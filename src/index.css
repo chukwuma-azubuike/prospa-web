@@ -410,15 +410,36 @@ p {
 }
 
 .sign-up-form input[type='radio'] {
-  width: 14px;
-  height: 12px;
+  width: 15px;
+  height: 37px;
+  border-color: #FA4A84;
+  position: absolute;
+  display: none;
 }
 
-input[type="month"]::-webkit-calendar-picker-indicator {
-  display: block;
-  padding: 0;
-  width: 15px;
-  margin-top: 4px;
+.sign-up-form input[type="radio"]+*::before {
+  position: relative;
+  top: 40px;
+  left: -29px;
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #EEEFF7;
+}
+
+.sign-up-form>div input[type='radio']:checked{
+  border: 1px solid #FA4A84;
+}
+
+.sign-up-form input[type="radio"]:checked+*::before {
+  background: radial-gradient(#FA4A84 60%, #FA4A84 33%, transparent 70%, transparent);
+  border-color: #EEEFF7;
 }
 
 .balance-header {
@@ -561,7 +582,7 @@ a li:active {
 @media (min-width:541px) {
   main {
     left: 398px;
-    width: 1138px;
+    width: 1121px;
   }
   .balance {
     top: 140px;
