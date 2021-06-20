@@ -107,6 +107,17 @@ p {
   color: #FFFFFF;
 }
 
+.side-intro-panel2 {
+  position: fixed;
+  padding: 36px;
+  height: 100%;
+  width: 326px;
+  border-radius: 0px;
+  z-index: 1;
+  background: #1C1335;
+  color: #FFFFFF;
+}
+
 .sign-up-form {
   width: 394px;
 }
@@ -506,6 +517,22 @@ a li:active {
 
 /* Form animations */
 
+.sign-up-form .EM:focus~.floating-label-EM {
+  left: 396px;
+  top: 298px;
+  font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
+.sign-up-form .PW:focus~.floating-label-PW {
+  left: 396px;
+  top: 366px;
+  font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
 .sign-up-form .FN:focus~.floating-label {
   left: 396px;
   top: 260px;
@@ -545,6 +572,26 @@ a li:active {
   pointer-events: none;
   left: 396px;
   top: 277px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-EM {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 396px;
+  top: 315px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-PW {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 396px;
+  top: 380px;
   transition: 0.2s ease all;
 }
 

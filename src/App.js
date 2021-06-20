@@ -8,6 +8,7 @@ import {
 import Dashboard from './components/dashboard';
 import SignUp from './components/sign-up';
 import SignUp1 from './components/sign-up-1';
+import SignIn from './components/sign-in';
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
   return (
     // <Dashboard />
     // <SignUp />
-    <SignUp1 />
+    // <SignUp1 />
+    <SignIn />
   );
 }
 
