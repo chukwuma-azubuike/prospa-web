@@ -14,10 +14,27 @@ import SignIn from './components/sign-in';
 function App() {
 
   return (
-    // <Dashboard />
-    // <SignUp />
-    // <SignUp1 />
-    <SignIn />
+    <div>
+      <Router>
+        <Switch>
+          <Route path='/signin'>
+            <SignIn />
+          </Route>
+          <Route path='/signup'>
+            <SignUp />
+          </Route>
+          <Route path='/signupnext'>
+            <SignUp1 />
+          </Route>
+          <Route path='/dashboard'>
+            <Dashboard />
+          </Route>
+          <Route path='/'>
+            <SignUp />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 

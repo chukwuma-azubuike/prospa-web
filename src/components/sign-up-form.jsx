@@ -1,10 +1,16 @@
 import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 function SignUpForm() {
     return (
         <div style={{ margin: '150px auto', width: '376px' }}>
             <p style={{ fontSize: '10px', position: 'absolute', right: '96px', top: '37px' }} >Already a member?
-                <a href='' style={{ textDecoration: 'none', color: '#FA4A84' }} >  Sign In</a></p>
+                <Link to="/signin" href='' style={{ textDecoration: 'none', color: '#FA4A84' }} >  Sign In</Link></p>
             <form className='sign-up-form' >
                 <h1>Create your account</h1>
                 <p style={{ color: '#8397AB', fontSize: '14px', fontWeight: '100' }} >A short description about account types</p>
@@ -237,11 +243,12 @@ function SignUpForm() {
                 <span class="floating-label-MN">Mobile number</span>
                 <input name='email' class='EA' type='email' />
                 <span class="floating-label-EA">Email Address</span>
-                <button type='submit'
-                    onClick={(e) => {
-                        e.preventDefault();
-                    }} >Next
-                </button>
+                <Link to='/signupnext' style={{ width: 'inherit' }} >
+                    <button type='submit'
+                        onClick={(e) => {
+                        }} >Next
+                    </button>
+                </Link>
             </form>
         </div>
     );
