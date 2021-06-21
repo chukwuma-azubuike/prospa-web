@@ -77,7 +77,7 @@ function SignUp1() {
             }
             {isTabletOrMobile &&
                 <div style={{ marginTop: '20px', height: '200px', width: '100%', display: 'flex', justifyContent: 'center' }} >
-                    <main style={{ height: '90%', background: '#FFFFFF', width: '90%', margin: 'auto' }}>
+                    <main style={{ height: '792px', background: '#FFFFFF', width: '90%', margin: 'auto' }}>
                         <div style={{ margin: '110px auto', width: '100%' }}>
                             <Link to='/signup' ><img src={arrowLeft} style={{ position: 'absolute', width: '32px', left: '0', top: '32px' }} /></Link>
                             <p style={{ fontSize: '10px', position: 'absolute', right: '0', top: '37px' }} >Already a member?

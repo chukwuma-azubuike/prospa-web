@@ -527,7 +527,7 @@ a li:active {
 
 .sign-up-form .EM:focus~.floating-label-EM {
   left: 396px;
-  top: 298px;
+  top: 276px;
   font-size: 11px;
   color: #FA4A84;
   opacity: 1;
@@ -535,7 +535,7 @@ a li:active {
 
 .sign-up-form .PW:focus~.floating-label-PW {
   left: 396px;
-  top: 366px;
+  top: 344px;
   font-size: 11px;
   color: #FA4A84;
   opacity: 1;
@@ -621,7 +621,7 @@ a li:active {
   position: absolute;
   pointer-events: none;
   left: 396px;
-  top: 315px;
+  top: 294px;
   transition: 0.2s ease all;
 }
 
@@ -631,7 +631,7 @@ a li:active {
   position: absolute;
   pointer-events: none;
   left: 396px;
-  top: 380px;
+  top: 360px;
   transition: 0.2s ease all;
 }
 

@@ -26,7 +26,7 @@ function bounce(val) {
   return spring(val, {
     // stiffness: 330,
     // damping: 12,
-    
+
   });
 }
 
@@ -39,13 +39,13 @@ const bounceTransition = {
   },
   // leave in a transparent, downscaled state
   atLeave: {
-    opacity: bounce(0),
-    scale: bounce(0.8),
+    opacity: 0,
+    scale: 0.8,
   },
   // and rest at an opaque, normally-scaled state
   atActive: {
-    opacity: bounce(1),
-    scale: bounce(1),
+    opacity: 1,
+    scale: 1,
   },
 };
 
@@ -56,29 +56,29 @@ function App() {
     <div>
       <Router>
         {/* <Switch> */}
-          <AnimatedSwitch
-            atEnter={bounceTransition.atEnter}
-            atLeave={bounceTransition.atLeave}
-            atActive={bounceTransition.atActive}
-            mapStyles={mapStyles}
-          // className="switch-wrapper"
-          >
-            <Route path='/signin'>
-              <SignIn />
-            </Route>
-            <Route path='/signup'>
-              <SignUp />
-            </Route>
-            <Route path='/signupnext'>
-              <SignUp1 />
-            </Route>
-            <Route path='/dashboard'>
-              <Dashboard />
-            </Route>
-            <Route path='/'>
-              <SignUp />
-            </Route>
-          </AnimatedSwitch>
+        <AnimatedSwitch
+          atEnter={bounceTransition.atEnter}
+          atLeave={bounceTransition.atLeave}
+          atActive={bounceTransition.atActive}
+          mapStyles={mapStyles}
+        // className="switch-wrapper"
+        >
+          <Route path='/signin'>
+            <SignIn />
+          </Route>
+          <Route path='/signup'>
+            <SignUp />
+          </Route>
+          <Route path='/signupnext'>
+            <SignUp1 />
+          </Route>
+          <Route path='/dashboard'>
+            <Dashboard />
+          </Route>
+          <Route path='/'>
+            <SignUp />
+          </Route>
+        </AnimatedSwitch>
         {/* </Switch> */}
       </Router>
     </div>
