@@ -49,7 +49,7 @@ function SignUpForm() {
                             <input type='email' name='email' class='EM' placeholder='Email' />
                             <input type='password' name='password' class='PW' placeholder='Password' />
                         </div>
-                        <Link to='/signupnext' style={{ width: 'inherit', margin: 'auto' }} >
+                        <Link to='/button' style={{ width: 'inherit', margin: 'auto' }} >
                             <button type='submit'
                                 onClick={(e) => {
                                 }} >Next
