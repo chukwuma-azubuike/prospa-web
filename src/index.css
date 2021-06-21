@@ -108,8 +108,8 @@ p {
 }
 
 #sign-up-form-resp input {
-  width: 90%;
-  padding-left: 10%;
+  width: 95%;
+  padding-left: 5%;
 }
 
 #sign-up-form-resp select {
@@ -529,7 +529,39 @@ a li:active {
 
 .sign-up-form .FN:focus~.floating-label {
   left: 396px;
-  top: 260px;
+  top: 271px;
+  font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
+.sign-up-form .FN-res:focus~.floating-label-res {
+  left: 50px;
+  top: 220px;
+  font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
+.sign-up-form .LN-res:focus~.floating-label-res-LN {
+  left: 50px;
+  top: 288px;
+  font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
+.sign-up-form .MN-res:focus~.floating-label-res-MN {
+  left: 134px;
+  top: 356px;
+  font-size: 11px;
+  color: #FA4A84;
+  opacity: 1;
+}
+
+.sign-up-form .EA-res:focus~.floating-label-res-EA {
+  left: 50px;
+  top: 420px;
   font-size: 11px;
   color: #FA4A84;
   opacity: 1;
@@ -537,7 +569,7 @@ a li:active {
 
 .sign-up-form .LN:focus~.floating-label-LN {
   left: 396px;
-  top: 328px;
+  top: 339px;
   font-size: 11px;
   color: #FA4A84;
   opacity: 1;
@@ -545,7 +577,7 @@ a li:active {
 
 .sign-up-form .MN:focus~.floating-label-MN {
   left: 500px;
-  top: 395px;
+  top: 406px;
   font-size: 11px;
   color: #FA4A84;
   opacity: 1;
@@ -553,7 +585,7 @@ a li:active {
 
 .sign-up-form .EA:focus~.floating-label-EA {
   left: 396px;
-  top: 462px;
+  top: 473px;
   font-size: 11px;
   color: #FA4A84;
   opacity: 1;
@@ -565,7 +597,7 @@ a li:active {
   position: absolute;
   pointer-events: none;
   left: 396px;
-  top: 277px;
+  top: 288px;
   transition: 0.2s ease all;
 }
 
@@ -595,7 +627,7 @@ a li:active {
   position: absolute;
   pointer-events: none;
   left: 396px;
-  top: 344px;
+  top: 355px;
   transition: 0.2s ease all;
 }
 
@@ -605,7 +637,7 @@ a li:active {
   position: absolute;
   pointer-events: none;
   left: 500px;
-  top: 410px;
+  top: 421px;
   transition: 0.2s ease all;
 }
 
@@ -615,7 +647,47 @@ a li:active {
   position: absolute;
   pointer-events: none;
   left: 396px;
-  top: 476px;
+  top: 487px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-res {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 50px;
+  top: 235px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-res-LN {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 50px;
+  top: 304px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-res-MN {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 134px;
+  top: 370px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-res-EA {
+  color: #8397AB;
+  font-size: 12px;
+  position: absolute;
+  pointer-events: none;
+  left: 50px;
+  top: 438px;
   transition: 0.2s ease all;
 }
 

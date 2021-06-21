@@ -8,6 +8,7 @@ import {
 import { useMediaQuery } from 'react-responsive';
 import SideIntroPanel from './side-intro-panel';
 import SignUpForm from './sign-up-form';
+import vault from '../images/vault.png';
 
 function SignUp() {
 
@@ -22,9 +23,11 @@ function SignUp() {
                     <SignUpForm />
                 </main>
             </div>}
-            {isTabletOrMobile && <div>
-                <SignUpForm />
-            </div>}
+            {isTabletOrMobile &&
+                <div>
+                    <SignUpForm />
+                </div>
+            }
         </div>
     );
 }
