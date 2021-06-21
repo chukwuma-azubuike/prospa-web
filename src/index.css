@@ -99,6 +99,7 @@ p {
 .side-intro-panel {
   position: fixed;
   padding: 36px;
+  /* height: 703px; */
   height: 100%;
   width: 326px;
   border-radius: 0px;
@@ -110,6 +111,7 @@ p {
 .side-intro-panel2 {
   position: fixed;
   padding: 36px;
+  /* height: 703px; */
   height: 100%;
   width: 326px;
   border-radius: 0px;
@@ -623,6 +625,14 @@ a li:active {
   left: 396px;
   top: 476px;
   transition: 0.2s ease all;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper>div {
+  position: absolute;
 }
 
 /*  */

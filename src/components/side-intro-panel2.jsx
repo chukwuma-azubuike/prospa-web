@@ -6,15 +6,8 @@ import vault from '../images/vault.png'
 
 function SideIntroPanel() {
 
-    const [reveal, setReveal] = useState(false);
-
-    function handleClick(e) {
-        e.preventDefault();
-        reveal ? setReveal(false) : setReveal(true);
-    }
-
     return (
-        < nav className='side-intro-panel2'>
+        <nav className='side-intro-panel2'>
             <div>
                 <img style={{ width: '108.95px' }} src={whiteLogo} />
             </div>
@@ -34,7 +27,7 @@ function SideIntroPanel() {
                 <img src={vault} style={{ width: '310px', margin: '50px 12px' }} />
                 <p style={{ position: 'absolute', bottom: '-12px', left: '0', fontSize: '10px' }} >© 2020 Prospa Inc</p>
             </div>
-        </nav >
+        </nav>
     )
 }
 export default SideIntroPanel;
