@@ -43,7 +43,7 @@ main {
 }
 
 #dashboard-res {
-  margin-top: 6px;
+  margin-top: 0;
 }
 
 .section-inner-div img {
@@ -231,7 +231,7 @@ p {
   top: 11px;
   left: 21px;
   float: left;
-  color: #3D8F83;
+  color: #8397AB;
   font-size: 27px;
 }
 
@@ -247,12 +247,12 @@ p {
   top: 0;
   width: 100%;
   display: none;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
 }
 
 .nav-logo {
   width: 100px;
-  margin: 15px;
+  margin: 21px;
 }
 
 .balance {
@@ -750,7 +750,9 @@ a li:active {
     display: none;
   }
   .mobile-nav-bar {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .mobile-side-div {
     height: 100%;
