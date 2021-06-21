@@ -63,28 +63,6 @@ p {
   max-width: 300px;
 }
 
-.hidden-div {
-  display: none;
-}
-
-.image-background {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 170px;
-}
-
-.reveal-div {
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  align-items: center;
-}
-
-.close {
-  margin: 0;
-}
-
 .side-bar {
   position: fixed;
   height: 100%;
@@ -122,6 +100,20 @@ p {
 
 .sign-up-form {
   width: 394px;
+}
+
+#sign-up-form-resp {
+  width: 100%;
+  margin: auto;
+}
+
+#sign-up-form-resp input {
+  width: 90%;
+  padding-left: 10%;
+}
+
+#sign-up-form-resp select {
+  width: 30%;
 }
 
 .sign-up-form input {
@@ -662,16 +654,14 @@ a li:active {
     display: none;
   }
   main {
+    width: 100%;
     height: 950px;
     padding-left: 0;
     margin-top: 40px;
   }
-  .balance-header {
-    display: block;
-    position: absolute;
-    top: -10px;
-    right: 63px;
-    width: 100px;
+  .side-intro-panel, .side-intro-panel2 {
+    height: 300px;
+    display: none;
   }
   .mobile-nav-bar {
     display: block;
@@ -691,118 +681,100 @@ a li:active {
     display: none;
     box-shadow: none;
   }
-  .balance {
-    text-align: center;
-    width: 330px;
-    height: 176px;
+  .sign-up-form .EM:focus~.floating-label-EM {
+    left: 396px;
+    top: 298px;
+    font-size: 11px;
+    color: #FA4A84;
+    opacity: 1;
+  }
+  .sign-up-form .PW:focus~.floating-label-PW {
+    left: 396px;
+    top: 366px;
+    font-size: 11px;
+    color: #FA4A84;
+    opacity: 1;
+  }
+  .sign-up-form .FN:focus~.floating-label {
+    left: 396px;
+    top: 260px;
+    font-size: 11px;
+    color: #FA4A84;
+    opacity: 1;
+  }
+  .sign-up-form .LN:focus~.floating-label-LN {
+    left: 396px;
+    top: 328px;
+    font-size: 11px;
+    color: #FA4A84;
+    opacity: 1;
+  }
+  .sign-up-form .MN:focus~.floating-label-MN {
+    left: 500px;
+    top: 395px;
+    font-size: 11px;
+    color: #FA4A84;
+    opacity: 1;
+  }
+  .sign-up-form .EA:focus~.floating-label-EA {
+    left: 396px;
+    top: 462px;
+    font-size: 11px;
+    color: #FA4A84;
+    opacity: 1;
+  }
+  .floating-label {
+    color: #8397AB;
+    font-size: 12px;
     position: absolute;
-    top: 46px;
-    border: 1px solid #EBEBEB;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-left: 0;
+    pointer-events: none;
+    left: 50px;
+    top: 286px;
+    transition: 0.2s ease all;
   }
-  .fonds-on-hold {
-    display: none;
-    position: static;
-    width: 320px;
-    height: inherit;
-    background: #F5F5F5;
-    border-radius: 10px;
-  }
-  .currency-list {
-    left: 241px;
-    width: 70px;
-    height: 107px;
-  }
-  .balance-currencies {
-    left: 242px;
-  }
-  .div-line {
-    width: 300px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-  }
-  .fonds-on-hold-responsive {
-    width: 330px;
-    height: 176px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: block;
+  .floating-label-EM {
+    color: #8397AB;
+    font-size: 12px;
     position: absolute;
-    top: 244px;
-    border: 1px solid #EBEBEB;
-    background: #F5F5F5;
+    pointer-events: none;
+    left: 396px;
+    top: 315px;
+    transition: 0.2s ease all;
   }
-  .payout {
-    top: 440px;
-    left: auto;
-  }
-  .search-span {
-    left: 160px;
-  }
-  .search-input {
-    width: 170px;
-  }
-  .search-span {
-    top: 10px;
-  }
-  .payout-header {
+  .floating-label-PW {
+    color: #8397AB;
+    font-size: 12px;
     position: absolute;
-    top: 20px;
-    left: 1px;
-  }
-  .calendar {
-    width: 132px;
-    left: 0px;
-    top: 68px;
-  }
-  .payout-button {
-    top: 68px;
-    left: 224px;
-    width: 105px;
-  }
-  .payout-table-header {
-    top: 128px;
-    width: 288px;
-  }
-  .payout-table-header-items {
-    margin-right: 20px;
-    font-size: 14px;
-    width: 50px;
-  }
-  #payout-id {
-    margin-right: 170px;
-  }
-  #amount {
-    margin-right: 0;
-  }
-  #source, #date {
-    display: none;
-  }
-  .payout-entries-disappear {
-    display: none;
-  }
-  .payout-items-container {
-    margin-top: 177px;
-  }
-  .payout-items {
-    z-index: 2px;
-    position: static;
-    margin-top: 10px;
-    height: 15px;
-    width: 290px;
-    background: #FFFFFF;
-    padding: 20px 20px;
-    color: #2A2A2A;
-    font-weight: normal;
-    border-bottom: 1px solid #EBEBEB;
-  }
-  .see-more {
-    position: static;
+    pointer-events: none;
+    left: 396px;
     top: 380px;
-    width: 290px;
-    text-decoration: none;
+    transition: 0.2s ease all;
+  }
+  .floating-label-LN {
+    color: #8397AB;
+    font-size: 12px;
+    position: absolute;
+    pointer-events: none;
+    left: 396px;
+    top: 344px;
+    transition: 0.2s ease all;
+  }
+  .floating-label-MN {
+    color: #8397AB;
+    font-size: 12px;
+    position: absolute;
+    pointer-events: none;
+    left: 500px;
+    top: 410px;
+    transition: 0.2s ease all;
+  }
+  .floating-label-EA {
+    color: #8397AB;
+    font-size: 12px;
+    position: absolute;
+    pointer-events: none;
+    left: 50px;
+    top: 490px;
+    transition: 0.2s ease all;
   }
 }
