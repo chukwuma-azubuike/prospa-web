@@ -5,11 +5,16 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive';
 import SideIntroPanel from './side-intro-panel';
 import AccountChoice from './account-choice';
 import arrowLeft from '../images/arrow left.png';
+import vault from '../images/vault.png'
 
 function SignUp1() {
+
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 540px)' });
+    const isBigScreen = useMediaQuery({ query: '(min-width: 541px)' })
 
     const [check1, setChecked1] = useState(true);
     const [check2, setChecked2] = useState(false);
@@ -38,34 +43,72 @@ function SignUp1() {
 
     return (
         <div>
-            <SideIntroPanel />
-            <main style={{ height: '100%', background: '#FFFFFF' }}>
-                <div style={{ margin: '110px auto', width: '376px' }}>
-                    <Link to='/signup' ><img src={arrowLeft} style={{ position: 'absolute', width: '32px', left: '96px', top: '32px' }} /></Link>
-                    <p style={{ fontSize: '10px', position: 'absolute', right: '96px', top: '37px' }} >Already a member?
-                        <Link to='/signin' href='' style={{ textDecoration: 'none', color: '#FA4A84' }}>  Sign In </Link> </p>
-                    <form className='sign-up-form' >
-                        <h2 style={{ margin: '0' }} >Open a new business account</h2>
-                        <p style={{
-                            marginBottom: '30px',
-                            color: '#8397AB', fontSize: '14px', fontWeight: '100'
-                        }} >A short description comes here</p>
-                        <AccountChoice divId='div1' id='option1' checker={checker} check={check1} header='I have a registered business / charity with CAC'
-                            subHeader='As a registered business you’ll get:' tick1='Account in your business name' tick2='Send to and receive transfers from all
+            {isBigScreen &&
+                <div>
+                    <SideIntroPanel />
+                    <main style={{ height: '100%', background: '#FFFFFF' }}>
+                        <div style={{ margin: '110px auto', width: '376px' }}>
+                            <Link to='/signup' ><img src={arrowLeft} style={{ position: 'absolute', width: '32px', left: '96px', top: '32px' }} /></Link>
+                            <p style={{ fontSize: '10px', position: 'absolute', right: '96px', top: '37px' }} >Already a member?
+                                <Link to='/signin' href='' style={{ textDecoration: 'none', color: '#FA4A84' }}>  Sign In </Link> </p>
+                            <form className='sign-up-form' >
+                                <h2 style={{ margin: '0' }} >Open a new business account</h2>
+                                <p style={{
+                                    marginBottom: '30px',
+                                    color: '#8397AB', fontSize: '14px', fontWeight: '100'
+                                }} >A short description comes here</p>
+                                <AccountChoice divId='div1' id='option1' checker={checker} check={check1} header='I have a registered business / charity with CAC'
+                                    subHeader='As a registered business you’ll get:' tick1='Account in your business name' tick2='Send to and receive transfers from all
                                 Nigerian banks' tick3='Tools for business management' defaultChecked={true} />
-                        <AccountChoice divId='div2' id='option2' checker={checker} check={check2} header='My business is not yet registered, I would like to register'
-                            subHeader='Everything you need to start your business' tick1='Registered business name with the CAC' tick2='Tax identification number'
-                            tick3='Your account will be automatically opened on completion' />
-                        <AccountChoice divId='div3' id='option3' checker={checker} check={check3} header='I’m a freelancer I do business in my personal name' />
-                        <Link to='/dashboard' style={{ width: 'inherit' }} >
-                            <button type='submit'
-                                onClick={(e) => {
-                                }} >Next
-                            </button>
-                        </Link>
-                    </form>
+                                <AccountChoice divId='div2' id='option2' checker={checker} check={check2} header='My business is not yet registered, I would like to register'
+                                    subHeader='Everything you need to start your business' tick1='Registered business name with the CAC' tick2='Tax identification number'
+                                    tick3='Your account will be automatically opened on completion' />
+                                <AccountChoice divId='div3' id='option3' checker={checker} check={check3} header='I’m a freelancer I do business in my personal name' />
+                                <Link to='/dashboard' style={{ width: 'inherit' }} >
+                                    <button type='submit'
+                                        onClick={(e) => {
+                                        }} >Next
+                                    </button>
+                                </Link>
+                            </form>
+                        </div>
+                    </main>
                 </div>
-            </main>
+            }
+            {isTabletOrMobile &&
+                <div style={{ marginTop: '20px', height: '200px', width: '100%', display: 'flex', justifyContent: 'center' }} >
+                    <main style={{ height: '90%', background: '#FFFFFF', width: '90%', margin: 'auto' }}>
+                        <div style={{ margin: '110px auto', width: '100%' }}>
+                            <Link to='/signup' ><img src={arrowLeft} style={{ position: 'absolute', width: '32px', left: '0', top: '32px' }} /></Link>
+                            <p style={{ fontSize: '10px', position: 'absolute', right: '0', top: '37px' }} >Already a member?
+                                <Link to='/signin' href='' style={{ textDecoration: 'none', color: '#FA4A84' }}>  Sign In </Link> </p>
+                            <form className='sign-up-form' id='sign-up-form-resp' >
+                                <div style={{ width: 'inherit' }} >
+                                    <h2 style={{ margin: '0' }} >Open a new business account</h2>
+                                    <p style={{
+                                        marginBottom: '30px',
+                                        color: '#8397AB', fontSize: '14px', fontWeight: '100'
+                                    }} >A short description comes here</p>
+                                    <AccountChoice divId='div1' id='option1' checker={checker} check={check1} header='I have a registered business / charity with CAC'
+                                    subHeader='As a registered business you’ll get:' tick1='Account in your business name' tick2='Send to and receive transfers from all
+                                Nigerian banks' tick3='Tools for business management' defaultChecked={true} />
+                                <AccountChoice divId='div2' id='option2' checker={checker} check={check2} header='My business is not yet registered, I would like to register'
+                                    subHeader='Everything you need to start your business' tick1='Registered business name with the CAC' tick2='Tax identification number'
+                                    tick3='Your account will be automatically opened on completion' />
+                                <AccountChoice divId='div3' id='option3' checker={checker} check={check3} header='I’m a freelancer I do business in my personal name' />
+                                    <Link to='/dashboard' style={{ width: 'inherit' }} >
+                                        <button type='submit'
+                                            onClick={(e) => {
+                                            }} >Next
+                                        </button>
+                                    </Link>
+                                </div>
+
+                            </form>
+                        </div>
+                    </main>
+                </div>
+            }
         </div>
     );
 }
