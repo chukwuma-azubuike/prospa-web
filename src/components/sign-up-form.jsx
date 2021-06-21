@@ -18,8 +18,8 @@ function SignUpForm() {
         <div>
             {/* Big Screen Responsive */}
             {isBigScreen && <div style={{ margin: '150px auto', width: '376px' }}>
-                <p style={{ fontSize: '10px' }} >Already a member?
-                    <Link to="/signin" href='' style={{ textDecoration: 'none', color: '#FA4A84' }} >  Sign In</Link></p>
+                <p style={{ fontSize: '10px', position: 'absolute', right: '96px', top: '37px' }} >Already a member?
+                    <Link to='/signin' href='' style={{ textDecoration: 'none', color: '#FA4A84' }}>  Sign In </Link> </p>
                 <form className='sign-up-form' >
                     <h1>Create your account</h1>
                     <p style={{ color: '#8397AB', fontSize: '14px', fontWeight: '100' }} >A short description about account types</p>
