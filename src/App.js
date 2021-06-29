@@ -5,7 +5,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { AnimatedSwitch, spring } from 'react-router-transition';
+import { AnimatedSwitch, RouteTransition, spring } from 'react-router-transition';
+import {Motion, TransitionMotion} from 'react-motion';
 import Dashboard from './components/dashboard';
 import SignUp from './components/sign-up';
 import SignUp1 from './components/sign-up-1';
@@ -24,8 +25,8 @@ function mapStyles(styles) {
 // wrap the `spring` helper to use a bouncy config
 function bounce(val) {
   return spring(val, {
-    // stiffness: 330,
-    // damping: 12,
+    stiffness: 330,
+    damping: 22,
 
   });
 }
@@ -39,13 +40,13 @@ const bounceTransition = {
   },
   // leave in a transparent, downscaled state
   atLeave: {
-    opacity: 0,
-    scale: 0.8,
+    opacity: bounce(0),
+    scale: bounce(0.8),
   },
   // and rest at an opaque, normally-scaled state
   atActive: {
-    opacity: 1,
-    scale: 1,
+    opacity: bounce(1),
+    scale: bounce(1),
   },
 };
 
@@ -61,7 +62,7 @@ function App() {
           atLeave={bounceTransition.atLeave}
           atActive={bounceTransition.atActive}
           mapStyles={mapStyles}
-        // className="switch-wrapper"
+          // className="route-wrapper"
         >
           <Route path='/signin'>
             <SignIn />

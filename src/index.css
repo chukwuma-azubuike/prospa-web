@@ -705,11 +705,11 @@ a li:active {
   transition: 0.2s ease all;
 }
 
-.switch-wrapper {
+.route-wrapper {
   position: relative;
 }
 
-.switch-wrapper>div {
+.route-wrapper > div {
   position: absolute;
 }
 
