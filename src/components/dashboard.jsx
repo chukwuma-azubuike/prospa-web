@@ -16,6 +16,13 @@ function Dashboard() {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 540px)' });
     const isBigScreen = useMediaQuery({ query: '(min-width: 541px)' });
 
+    function splitDecimalString(string) {
+        let splitString = string.split('.');
+        return {
+            int: splitString[0],
+            dec: splitString[1]
+        };
+    }
     return (
         <div>
             {isBigScreen &&
@@ -26,8 +33,9 @@ function Dashboard() {
                     <main className='dashboard-main'>
                         <Welcome />
                         <div style={{ position: 'absolute', top: '166px', width: '996px' }} >
-                            <Account balance='N814,800' accountType='CURRENT ACCOUNT' bankAccount='PROVIDUS BANK - 9906533917' icon={rectangle2} />
-                            <Account balance='N39,342' accountType='SAVINGS ACCOUNT' bankAccount='SUB ACCOUNT - 12346789' icon={rectangle7} />
+                            <Account balance={splitDecimalString('814800.80').int} decimal={splitDecimalString('814800.16').dec}
+                                accountType='CURRENT ACCOUNT' bankAccount='PROVIDUS BANK - 9906533917' icon={rectangle2} />
+                            <Account balance={splitDecimalString('39342.45').int} decimal={splitDecimalString('39342.45').dec} accountType='SAVINGS ACCOUNT' bankAccount='SUB ACCOUNT - 12346789' icon={rectangle7} />
                         </div>
                         <div style={{ position: 'absolute', top: '365px', width: '82%' }}>
                             <Summary />
