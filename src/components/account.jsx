@@ -31,11 +31,11 @@ class Account extends React.Component {
                             duration={1.5}
                             separator=","
                             decimal="."
-                            prefix="N "
+                            prefix="N"
                             suffix="."
                         />
                         <CountUp
-                            style={{ fontSize: '20px' }}
+                            style={{ fontSize: '16px' }}
                             start={0}
                             end={this.state.decimal}
                             duration={4}
