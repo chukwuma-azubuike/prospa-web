@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/prospa-web/static/css/main.32797190.chunk.css",
+    "main.js": "/prospa-web/static/js/main.c11ecc49.chunk.js",
+    "main.js.map": "/prospa-web/static/js/main.c11ecc49.chunk.js.map",
+    "runtime-main.js": "/prospa-web/static/js/runtime-main.9b35be47.js",
+    "runtime-main.js.map": "/prospa-web/static/js/runtime-main.9b35be47.js.map",
+    "static/js/2.84c62e05.chunk.js": "/prospa-web/static/js/2.84c62e05.chunk.js",
+    "static/js/2.84c62e05.chunk.js.map": "/prospa-web/static/js/2.84c62e05.chunk.js.map",
+    "index.html": "/prospa-web/index.html",
+    "static/css/main.32797190.chunk.css.map": "/prospa-web/static/css/main.32797190.chunk.css.map",
+    "static/js/2.84c62e05.chunk.js.LICENSE.txt": "/prospa-web/static/js/2.84c62e05.chunk.js.LICENSE.txt",
+    "static/media/user.ad06dfc4.png": "/prospa-web/static/media/user.ad06dfc4.png",
+    "static/media/vault.d0333521.png": "/prospa-web/static/media/vault.d0333521.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b35be47.js",
+    "static/js/2.84c62e05.chunk.js",
+    "static/css/main.32797190.chunk.css",
+    "static/js/main.c11ecc49.chunk.js"
+  ]
+}
